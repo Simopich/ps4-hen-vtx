@@ -4,9 +4,9 @@
 
 // data
 #define	XFAST_SYSCALL_addr              0x00001C0
-#define M_TEMP_addr                     0x14B4110
+#define M_TEMP_addr                     0x0155E1E0 // Done
 #define MINI_SYSCORE_SELF_BINARY_addr   0x14C9D48
-#define ALLPROC_addr                    0x2382FF8
+#define ALLPROC_addr                    0x01B906E0 // Done
 #define SBL_DRIVER_MAPPED_PAGES_addr    0x271E208
 #define SBL_PFS_SX_addr                 0x271E5D8
 #define SBL_KEYMGR_KEY_SLOTS_addr       0x2744548
@@ -20,8 +20,8 @@
 #define memcmp_addr                     0x050AC0
 #define _sx_xlock_addr                  0x0F5E10
 #define _sx_xunlock_addr                0x0F5FD0
-#define malloc_addr                     0x10E250
-#define free_addr                       0x10E460
+#define malloc_addr                     0x003017B0 // Done
+#define free_addr                       0x00301970 // Done
 #define strstr_addr                     0x17DFB0
 #define fpu_kern_enter_addr             0x1BFF90
 #define fpu_kern_leave_addr             0x1C0090
@@ -54,9 +54,9 @@
 // Patch
 #define vmspace_acquire_ref_addr        0x19EF90
 #define vmspace_free_addr               0x19EDC0
-#define vm_map_lock_read_addr           0x19F140
-#define vm_map_unlock_read_addr         0x19F190
-#define vm_map_lookup_entry_addr        0x19F760
+#define vm_map_lock_read_addr           0x0007BB80 // Done
+#define vm_map_unlock_read_addr         0x0007BBD0 // Done
+#define vm_map_lookup_entry_addr        0x0007C1C0 // Done
 #define proc_rwmem_addr                 0x30D150
 
 // Fself hooks
@@ -89,34 +89,34 @@
 
 // SceShellCore patches
 // call sceKernelIsGenuineCEX
-#define sceKernelIsGenuineCEX_patch1    0x16D05B
-#define sceKernelIsGenuineCEX_patch2    0x79980B
-#define sceKernelIsGenuineCEX_patch3    0x7E5A13
-#define sceKernelIsGenuineCEX_patch4    0x94715B
+#define sceKernelIsGenuineCEX_patch1    0x0016F014 // Done
+#define sceKernelIsGenuineCEX_patch2    0x00864744 // Done
+#define sceKernelIsGenuineCEX_patch3    0x008B2232 // Done
+#define sceKernelIsGenuineCEX_patch4    0x00A2A254 // Done
 
 // call nidf_libSceDipsw
-#define nidf_libSceDipsw_patch1         0x16D087
-#define nidf_libSceDipsw_patch2         0x23747B
-#define nidf_libSceDipsw_patch3         0x799837
-#define nidf_libSceDipsw_patch4         0x947187
+#define nidf_libSceDipsw_patch1         0x0016F042 // Done - Maybe not???
+#define nidf_libSceDipsw_patch2         0x0024A4EB // Done - Maybe not???
+#define nidf_libSceDipsw_patch3         0x00864772 // Done - Maybe not???
+#define nidf_libSceDipsw_patch4         0x00A2A282 // Done - Maybe not???
 
 // enable data mount
-#define enable_data_mount_patch         0x319A53
+#define enable_data_mount_patch         0x00321F2B // Done
 
 // enable fpkg
-#define enable_fpkg_patch               0x3E0602
+#define enable_fpkg_patch               0x003DA06F // Done 
  
 // debug pkg free string
-#define fake_free_patch                 0xEA96A7
+#define fake_free_patch                 0x00FD5BD1 // Done
 
 // make pkgs installer working with external hdd
-#define pkg_installer_patch             0x9312A1
+#define pkg_installer_patch             0x00A13101 // Done
 
 // enable support with 6.xx external hdd
-#define ext_hdd_patch                   0x593C7D
+#define ext_hdd_patch                   0x0061A66D // Done
 
 // enable debug trophies on retail
-#define debug_trophies_patch            0x6ABE39
+#define debug_trophies_patch            0x00745809 // Done
 
 // disable screenshot block
 #define disable_screenshot_patch        0x0CB8C6
