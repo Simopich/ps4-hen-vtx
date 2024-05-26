@@ -7,14 +7,14 @@
 #define M_TEMP_addr                     0x1532c00 // done
 #define MINI_SYSCORE_SELF_BINARY_addr   0x0d5da48 // done - sus cit. iMrDJAi
 #define ALLPROC_addr                    0x22d9b40 // done
-#define SBL_DRIVER_MAPPED_PAGES_addr    0x2646258 // done - took the one with the most similar name - kdlsym_addr_gpu_va_page_list 0x2646258
+#define SBL_DRIVER_MAPPED_PAGES_addr    0x2646258 // done - need to check - took the one with the most similar name - kdlsym_addr_gpu_va_page_list 0x2646258
 #define SBL_PFS_SX_addr                 0x267c088 // done
 #define SBL_KEYMGR_KEY_SLOTS_addr       0x26583b8 // done
 #define SBL_KEYMGR_KEY_RBTREE_addr      0x26583c8 // done
 #define SBL_KEYMGR_BUF_VA_addr          0x265c000 // done
 #define SBL_KEYMGR_BUF_GVA_addr         0x265c808 // done
 #define FPU_CTX_addr                    0x2660040 // done
-#define DIPSW_addr                      0x1CD0650
+#define DIPSW_addr                      0x1CD0650 // not done by iMrDJAi
 
 // common
 #define memcmp_addr                     0x109940 // done
