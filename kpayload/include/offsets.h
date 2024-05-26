@@ -3,7 +3,7 @@
 #pragma once
 
 // data
-#define	XFAST_SYSCALL_addr              0x00001C0
+#define	XFAST_SYSCALL_addr              0x000001C0 // Done
 #define M_TEMP_addr                     0x0155E1E0 // Done
 #define MINI_SYSCORE_SELF_BINARY_addr   0x14C9D48
 #define ALLPROC_addr                    0x01B906E0 // Done
