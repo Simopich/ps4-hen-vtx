@@ -6,7 +6,7 @@
 #define	XFAST_SYSCALL_addr              0x000001C0 // Done
 
 // Names - Data
-#define PRISON0_addr                    0x10986A0
+#define PRISON0_addr                    0x0111B840 // Done from github.com/Scene-Collectiv
 #define ROOTVNODE_addr                  0x021ebf20 // Done
 #define PMAP_STORE_addr                 0x01b8c4b0 // Done
 #define DT_HASH_SEGMENT_addr            0x00140fe0 // Done
