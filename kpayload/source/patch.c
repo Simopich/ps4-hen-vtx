@@ -295,10 +295,10 @@ PAYLOAD_CODE int shellui_patch(void)
     }
 
     // disable CreateUserForIDU
-    ret = proc_write_mem(ssui, (void *)(executable_base  + CreateUserForIDU_patch), 4, "\x48\x31\xC0\xC3", &n);
-    if (ret) {
-        goto error;
-    }
+    // ret = proc_write_mem(ssui, (void *)(executable_base  + CreateUserForIDU_patch), 4, "\x48\x31\xC0\xC3", &n);
+    // if (ret) {
+    //     goto error;
+    // }
 
     for (int i = 0; i < num_entries; i++) {
         if (!memcmp(entries[i].name, "app.exe.sprx", 12) && (entries[i].prot >= (PROT_READ | PROT_EXEC))) {
@@ -313,7 +313,7 @@ PAYLOAD_CODE int shellui_patch(void)
     }
 
     // enable remote play menu - credits to Aida
-    ret = proc_write_mem(ssui, (void *)(app_base  + remote_play_menu_patch), 5, "\xE9\x82\x02\x00\x00", &n);
+    // ret = proc_write_mem(ssui, (void *)(app_base  + remote_play_menu_patch), 5, "\xE9\x82\x02\x00\x00", &n);
 
     for (int i = 0; i < num_entries; i++) {
         if (!memcmp(entries[i].name, "libkernel_sys.sprx", 18) && (entries[i].prot >= (PROT_READ | PROT_EXEC))) {
@@ -376,15 +376,15 @@ PAYLOAD_CODE int remoteplay_patch() {
     }
 
     // patch SceRemotePlay process
-    ret = proc_write_mem(srp, (void *)(executable_base + SceRemotePlay_patch1), 1, "\x01", &n);
-    if (ret) {
-        goto error;
-    }
+    // ret = proc_write_mem(srp, (void *)(executable_base + SceRemotePlay_patch1), 1, "\x01", &n);
+    // if (ret) {
+    //     goto error;
+    // }
 
-    ret = proc_write_mem(srp, (void *)(executable_base + SceRemotePlay_patch2), 2, "\xEB\x1E", &n);
-    if (ret) {
-        goto error;
-    }
+    // ret = proc_write_mem(srp, (void *)(executable_base + SceRemotePlay_patch2), 2, "\xEB\x1E", &n);
+    // if (ret) {
+    //     goto error;
+    // }
 
     error:
     if (entries) {
