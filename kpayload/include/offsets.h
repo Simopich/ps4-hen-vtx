@@ -80,7 +80,7 @@
 #define sceSblRcMgrIsStoreMode_patch                                0x0001D520 // Done - Based on name only
 
 // SceShellUI patches - remote play patches
-// #define CreateUserForIDU_patch                                      0x1A8FA0
+// #define CreateUserForIDU_patch                                      0x00188c10 // Done
 // #define remote_play_menu_patch                                      0xEE638E
 
 // SceRemotePlay patches - remote play patches
