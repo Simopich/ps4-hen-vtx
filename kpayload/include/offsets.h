@@ -40,7 +40,7 @@
 #define sceSblAuthMgrVerifyHeader_addr  0x0063fc20 // Done
 
 // Fpkg
-#define RsaesPkcs1v15Dec2048CRT_addr    0x1FD7D0
+#define RsaesPkcs1v15Dec2048CRT_addr    0x004607B0 // Done ?? 
 #define Sha256Hmac_addr                 0x00442f80 // Done
 #define AesCbcCfb128Encrypt_addr        0x001ff000 // Done
 #define AesCbcCfb128Decrypt_addr        0x001ff230 // Done
@@ -71,7 +71,7 @@
 #define sceSblKeymgrSetKeyStorage__sceSblDriverSendMsg_hook         0x006229d5 // Done
 #define sceSblKeymgrInvalidateKey__sx_xlock_hook                    0x0061E80D // Done ?? 
 #define sceSblKeymgrSmCallfunc_npdrm_decrypt_isolated_rif_hook      0x0064c030 // Done
-#define sceSblKeymgrSmCallfunc_npdrm_decrypt_rif_new_hook           0x64D4FF
+#define sceSblKeymgrSmCallfunc_npdrm_decrypt_rif_new_hook           0x0064CDFE // Done ??
 #define mountpfs__sceSblPfsSetKeys_hook1                            0x006C1EB9 // Done ??
 #define mountpfs__sceSblPfsSetKeys_hook2                            0x006C20EA // Done ??
 
