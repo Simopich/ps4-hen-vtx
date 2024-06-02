@@ -25,6 +25,13 @@ void initDebugSocket(void)
 void closeDebugSocket(void)
 	sceNetSocketClose(sock);
 
+#else
+
+void printfsocket(const char *format, ...) {
+  // Intentionally empty function body
+  (void)format; // Avoid unused variable warning
+}
+
 #endif
 
 void notify(char *message)
