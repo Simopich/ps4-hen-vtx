@@ -5,7 +5,7 @@
 // data
 #define	XFAST_SYSCALL_addr              0x000001C0 // Done
 #define M_TEMP_addr                     0x0155E1E0 // Done
-#define MINI_SYSCORE_SELF_BINARY_addr   0x14C9D48
+#define MINI_SYSCORE_SELF_BINARY_addr   0x01575df8 // Done - Not 100% sure
 #define ALLPROC_addr                    0x01B906E0 // Done
 #define SBL_DRIVER_MAPPED_PAGES_addr    0x02642ca8 // Done
 #define SBL_PFS_SX_addr                 0x02649b40 // Done
@@ -40,7 +40,7 @@
 #define sceSblAuthMgrVerifyHeader_addr  0x0063fc20 // Done
 
 // Fpkg
-#define RsaesPkcs1v15Dec2048CRT_addr    0x1FD7D0
+#define RsaesPkcs1v15Dec2048CRT_addr    0x004607b0 // Done
 #define Sha256Hmac_addr                 0x00442f80 // Done
 #define AesCbcCfb128Encrypt_addr        0x001ff000 // Done
 #define AesCbcCfb128Decrypt_addr        0x001ff230 // Done
@@ -61,19 +61,19 @@
 
 // Fself hooks
 #define sceSblAuthMgrIsLoadable__sceSblACMgrGetPathId_hook          0x006426fc // Done
-#define sceSblAuthMgrIsLoadable2_hook                               0x63E3A1
+#define sceSblAuthMgrIsLoadable2_hook                               0x0064284e // Done
 #define sceSblAuthMgrVerifyHeader_hook1                             0x00642fe6 // Done
-#define sceSblAuthMgrVerifyHeader_hook2                             0x63F718
+#define sceSblAuthMgrVerifyHeader_hook2                             0x00643cc9 // Done
 #define sceSblAuthMgrSmLoadSelfSegment__sceSblServiceMailbox_hook   0x006402ea // Done
-#define sceSblAuthMgrSmLoadSelfBlock__sceSblServiceMailbox_hook     0x643DA2
+#define sceSblAuthMgrSmLoadSelfBlock__sceSblServiceMailbox_hook     0x00640f28 // Done
 
 // Fpkg hooks
 #define sceSblKeymgrSetKeyStorage__sceSblDriverSendMsg_hook         0x006229d5 // Done
-#define sceSblKeymgrInvalidateKey__sx_xlock_hook                    0x62E96D
+#define sceSblKeymgrInvalidateKey__sx_xlock_hook                    0x0061E80D // Done
 #define sceSblKeymgrSmCallfunc_npdrm_decrypt_isolated_rif_hook      0x0064c030 // Done
-#define sceSblKeymgrSmCallfunc_npdrm_decrypt_rif_new_hook           0x64D4FF
-#define mountpfs__sceSblPfsSetKeys_hook1                            0x6AAAD5
-#define mountpfs__sceSblPfsSetKeys_hook2                            0x6AAD04
+#define sceSblKeymgrSmCallfunc_npdrm_decrypt_rif_new_hook           0x0064CDFE // Done
+#define mountpfs__sceSblPfsSetKeys_hook1                            0x006C1EB9 // Done
+#define mountpfs__sceSblPfsSetKeys_hook2                            0x006C20EA // Done
 
 // SceShellUI patches - debug patches
 #define sceSblRcMgrIsAllowDebugMenuForSettings_patch                0x0001D1C0 // Done - Based on name only
