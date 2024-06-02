@@ -12,13 +12,13 @@
 #define DT_HASH_SEGMENT_addr            0x00140fe0 // Done
 
 // Functions
-#define pmap_protect_addr               0x02E3090
-#define pmap_protect_p_addr             0x02E30D4
+#define pmap_protect_addr               0x0012FA40 // Done ??
+#define pmap_protect_p_addr             0x0012FA87 // Done ??
 
 // Patches
 // debug menu error
-#define debug_menu_error_patch1         0x04F9048
-#define debug_menu_error_patch2         0x04FA15C
+#define debug_menu_error_patch1         0x04E6D48 // Done ??
+#define debug_menu_error_patch2         0x04E802F // Done ??
 
 // disable signature check
 #define disable_signature_check_patch   0x00686580 // Done
@@ -28,7 +28,7 @@
 #define enable_debug_rifs_patch2        0x0064e420 // Done
 
 // allow sys_dynlib_dlsym in all processes
-#define sys_dynlib_dlsym_patch          0x0237F3A
+#define sys_dynlib_dlsym_patch          0x0023B34F // Done ?? looks dif
 
 // sdk version spoof - enable all VR fws
 #define sdk_version_patch               0x14A63F0
