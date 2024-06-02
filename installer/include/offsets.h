@@ -19,7 +19,7 @@
 // Patches
 // debug menu error
 #define debug_menu_error_patch1         0x004e6d48 // Done
-#define debug_menu_error_patch2         0x004e802f // Done - Not 100% sure
+#define debug_menu_error_patch2         0x004e802f // Done
 
 // disable signature check
 #define disable_signature_check_patch   0x00686580 // Done

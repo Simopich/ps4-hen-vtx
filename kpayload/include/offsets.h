@@ -80,12 +80,12 @@
 #define sceSblRcMgrIsStoreMode_patch                                0x0001D520 // Done - Based on name only
 
 // SceShellUI patches - remote play patches
-#define CreateUserForIDU_patch                                      0x1A8FA0
-#define remote_play_menu_patch                                      0xEE638E
+// #define CreateUserForIDU_patch                                      0x1A8FA0
+// #define remote_play_menu_patch                                      0xEE638E
 
 // SceRemotePlay patches - remote play patches
-#define SceRemotePlay_patch1                                        0x03C33F
-#define SceRemotePlay_patch2                                        0x03C35A
+// #define SceRemotePlay_patch1                                        0x03C33F
+// #define SceRemotePlay_patch2                                        0x03C35A
 
 // SceShellCore patches
 // call sceKernelIsGenuineCEX
@@ -95,10 +95,10 @@
 #define sceKernelIsGenuineCEX_patch4    0x00A2A254 // Done
 
 // call nidf_libSceDipsw
-#define nidf_libSceDipsw_patch1         0x0016F042 // Done - Based on name only
-#define nidf_libSceDipsw_patch2         0x0024A4EB // Done - Based on name only
-#define nidf_libSceDipsw_patch3         0x00864772 // Done - Based on name only
-#define nidf_libSceDipsw_patch4         0x00A2A282 // Done - Based on name only
+#define nidf_libSceDipsw_patch1         0x0016F042 // Done
+#define nidf_libSceDipsw_patch2         0x0024A4EB // Done
+#define nidf_libSceDipsw_patch3         0x00864772 // Done
+#define nidf_libSceDipsw_patch4         0x00A2A282 // Done
 
 // enable data mount
 #define enable_data_mount_patch         0x00321F2B // Done
@@ -119,6 +119,6 @@
 #define debug_trophies_patch            0x00745809 // Done
 
 // disable screenshot block
-#define disable_screenshot_patch        0x0CB8C6
+#define disable_screenshot_patch        0x000d1956 // Done
 
 #endif
