@@ -15,6 +15,7 @@
 #define pmap_protect_addr               0x00140fe0 // Done - Auto - Typo Checked
 #define pmap_protect_p_addr             0x0012fa87 // Done - Checked
 #define malloc_addr                     0x003017B0 // Done - Checked
+#define printf_addr                     0x000b79e0 // Done - Checked
 
 // Patches
 // debug menu error
@@ -29,7 +30,8 @@
 #define enable_debug_rifs_patch2        0x0064e420 // Done - Auto - Typo Checked
 
 // allow sys_dynlib_dlsym in all processes
-#define sys_dynlib_dlsym_patch          0x0023b34f // Done - Checked
+#define sys_dynlib_dlsym_patch1         0x0023b34f // Done - Checked
+#define sys_dynlib_dlsym_patch2         0x00221810 // Done - Checked
 
 // sdk version spoof - enable all VR fws
 // #define sdk_version_patch               0x14A63F0
