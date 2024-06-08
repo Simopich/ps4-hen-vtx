@@ -69,11 +69,11 @@
 
 // Fpkg hooks
 #define sceSblKeymgrSetKeyStorage__sceSblDriverSendMsg_hook         0x006229d5 // Done - Auto - Typo Checked
-#define sceSblKeymgrInvalidateKey__sx_xlock_hook                    0x0061E80D // Done
+#define sceSblKeymgrInvalidateKey__sx_xlock_hook                    0x0061E80D // Done - Checked
 #define sceSblKeymgrSmCallfunc_npdrm_decrypt_isolated_rif_hook      0x0064c030 // Done - Auto - Typo Checked
-#define sceSblKeymgrSmCallfunc_npdrm_decrypt_rif_new_hook           0x0064CDFE // Done
-#define mountpfs__sceSblPfsSetKeys_hook1                            0x006C1EB9 // Done
-#define mountpfs__sceSblPfsSetKeys_hook2                            0x006C20EA // Done
+#define sceSblKeymgrSmCallfunc_npdrm_decrypt_rif_new_hook           0x0064CDFE // Done - Checked
+#define mountpfs__sceSblPfsSetKeys_hook1                            0x006C1EB9 // Done - Checked
+#define mountpfs__sceSblPfsSetKeys_hook2                            0x006C20EA // Done - Checked
 
 // SceShellUI patches - debug patches
 #define sceSblRcMgrIsAllowDebugMenuForSettings_patch                0x0001D1C0 // Done - Based on name only
