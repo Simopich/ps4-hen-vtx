@@ -13,7 +13,7 @@
 #define SBL_KEYMGR_KEY_RBTREE_addr      0x02644248 // Done - Auto - Typo Checked
 #define SBL_KEYMGR_BUF_VA_addr          0x02648000 // Done - Auto - Typo Checked
 #define SBL_KEYMGR_BUF_GVA_addr         0x02648808 // Done - Auto - Typo Checked
-#define FPU_CTX_addr                    0x026735c0 // Done - Auto - Typo Checked
+#define FPU_CTX_addr                    0x026501c0 // Done - Checked
 #define DIPSW_addr                      0x02212850 // Done - Auto - Typo Checked
 
 // common
@@ -37,7 +37,7 @@
 #define sceSblAuthMgrSmIsLoadable2_addr 0x00641960 // Done - Auto - Typo Checked
 #define _sceSblAuthMgrGetSelfInfo_addr  0x006421a0 // Done - Auto - Typo Checked
 #define _sceSblAuthMgrSmStart_addr      0x0063dea0 // Done - Auto - Typo Checked
-#define sceSblAuthMgrVerifyHeader_addr  0x0063fc20 // Done - Auto - Typo Checked
+#define sceSblAuthMgrVerifyHeader_addr  0x006419c0 // Done - Checked
 
 // Fpkg
 #define RsaesPkcs1v15Dec2048CRT_addr    0x004607b0 // Done - Checked
