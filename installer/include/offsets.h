@@ -8,7 +8,7 @@
 #define PRISON0_addr                    0x0111b840 // Done - Checked
 #define ROOTVNODE_addr                  0x021ebf20 // Done - Auto - Typo Checked
 #define PMAP_STORE_addr                 0x01b8c4b0 // Done - Auto - Typo Checked
-#define DT_HASH_SEGMENT_addr            0x14ea6be8 // Done - Checked
+#define DT_HASH_SEGMENT_addr            0x00ce6be8 // Done - Checked
 #define M_TEMP_addr                     0x0155e1e0 // Done - Auto - Typo Checked
 
 // Functions
