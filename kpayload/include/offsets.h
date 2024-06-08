@@ -5,7 +5,7 @@
 // data
 #define	XFAST_SYSCALL_addr              0x000001C0 // Done - Checked
 #define M_TEMP_addr                     0x0155e1e0 // Done - Auto - Typo Checked
-#define MINI_SYSCORE_SELF_BINARY_addr   0x01575df8 // Done - Not 100% sure (There are two of them, the other one is: )
+#define MINI_SYSCORE_SELF_BINARY_addr   0x01575df8 // Done - Not 100% sure (There are two of them, the other one is: 0x017a2df8, 5.05 also has two and the offset is the first one found in memory like the one I chose)
 #define ALLPROC_addr                    0x01b906e0 // Done - Auto - Typo Checked
 #define SBL_DRIVER_MAPPED_PAGES_addr    0x02642ca8 // Done - Auto - Typo Checked
 #define SBL_PFS_SX_addr                 0x02649b40 // Done - Auto - Typo Checked
@@ -40,7 +40,7 @@
 #define sceSblAuthMgrVerifyHeader_addr  0x0063fc20 // Done - Auto - Typo Checked
 
 // Fpkg
-#define RsaesPkcs1v15Dec2048CRT_addr    0x004607b0 // Done
+#define RsaesPkcs1v15Dec2048CRT_addr    0x004607b0 // Done - Checked
 #define Sha256Hmac_addr                 0x00442f80 // Done - Auto - Typo Checked
 #define AesCbcCfb128Encrypt_addr        0x001ff000 // Done - Auto - Typo Checked
 #define AesCbcCfb128Decrypt_addr        0x001ff230 // Done - Auto - Typo Checked
@@ -61,11 +61,11 @@
 
 // Fself hooks
 #define sceSblAuthMgrIsLoadable__sceSblACMgrGetPathId_hook          0x006426fc // Done - Auto - Typo Checked
-#define sceSblAuthMgrIsLoadable2_hook                               0x0064284e // Done
+#define sceSblAuthMgrIsLoadable2_hook                               0x0064284e // Done - Checked
 #define sceSblAuthMgrVerifyHeader_hook1                             0x00642fe6 // Done - Auto - Typo Checked
-#define sceSblAuthMgrVerifyHeader_hook2                             0x00643cc9 // Done
+#define sceSblAuthMgrVerifyHeader_hook2                             0x00643cc9 // Done - Checked
 #define sceSblAuthMgrSmLoadSelfSegment__sceSblServiceMailbox_hook   0x006402ea // Done - Auto - Typo Checked
-#define sceSblAuthMgrSmLoadSelfBlock__sceSblServiceMailbox_hook     0x00640f28 // Done
+#define sceSblAuthMgrSmLoadSelfBlock__sceSblServiceMailbox_hook     0x00640f28 // Done - Checked
 
 // Fpkg hooks
 #define sceSblKeymgrSetKeyStorage__sceSblDriverSendMsg_hook         0x006229d5 // Done - Auto - Typo Checked
