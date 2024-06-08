@@ -76,8 +76,8 @@
 #define mountpfs__sceSblPfsSetKeys_hook2                            0x006C20EA // Done - Checked
 
 // SceShellUI patches - debug patches
-#define sceSblRcMgrIsAllowDebugMenuForSettings_patch                0x0001D1C0 // Done - Based on name only
-#define sceSblRcMgrIsStoreMode_patch                                0x0001D520 // Done - Based on name only
+#define sceSblRcMgrIsAllowDebugMenuForSettings_patch                0x0001df20 // Done - Checked
+#define sceSblRcMgrIsStoreMode_patch                                0x0001e280 // Done - Checked
 
 // SceShellUI patches - remote play patches
 // #define CreateUserForIDU_patch                                      0x00188c10 // Done
