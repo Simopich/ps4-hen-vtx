@@ -2,7 +2,7 @@
 #define __OFFSETS_H__
 #pragma once
 
-#define	XFAST_SYSCALL_addr              0x000001C0 // Done
+#define	XFAST_SYSCALL_addr              0x000001C0 // Done - Checked
 
 // Names - Data
 #define PRISON0_addr                    0x0111b840 // Done
@@ -11,7 +11,7 @@
 #define DT_HASH_SEGMENT_addr            0x00140fe0 // Done
 
 // Functions
-#define pmap_protect_addr               0x0012fa40 // Done - Auto
+#define pmap_protect_addr               0x00140fe0 // Done - Auto
 #define pmap_protect_p_addr             0x0012fa87 // Done
 #define malloc_addr                     0x003017B0 // Done
 
