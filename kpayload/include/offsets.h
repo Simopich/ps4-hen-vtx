@@ -89,31 +89,31 @@
 
 // SceShellCore patches
 // call sceKernelIsGenuineCEX
-#define sceKernelIsGenuineCEX_patch1    0x0016F014 // Done
-#define sceKernelIsGenuineCEX_patch2    0x00864744 // Done
-#define sceKernelIsGenuineCEX_patch3    0x008B2232 // Done
-#define sceKernelIsGenuineCEX_patch4    0x00A2A254 // Done
+#define sceKernelIsGenuineCEX_patch1    0x0016F014 // Done - Checked
+#define sceKernelIsGenuineCEX_patch2    0x00864744 // Done - Checked
+#define sceKernelIsGenuineCEX_patch3    0x008B2232 // Done - Checked
+#define sceKernelIsGenuineCEX_patch4    0x00A2A254 // Done - Checked
 
 // call nidf_libSceDipsw
-#define nidf_libSceDipsw_patch1         0x0016F042 // Done
-#define nidf_libSceDipsw_patch2         0x0024A4EB // Done
-#define nidf_libSceDipsw_patch3         0x00864772 // Done
-#define nidf_libSceDipsw_patch4         0x00A2A282 // Done
+#define nidf_libSceDipsw_patch1         0x0016F042 // Done - Checked
+#define nidf_libSceDipsw_patch2         0x0024A4EB // Done - Checked
+#define nidf_libSceDipsw_patch3         0x00864772 // Done - Checked
+#define nidf_libSceDipsw_patch4         0x00A2A282 // Done - Checked
 
 // enable data mount
-#define enable_data_mount_patch         0x00321F2B // Done
+#define enable_data_mount_patch         0x00321F2B // Done - Checked
 
 // enable fpkg
-#define enable_fpkg_patch               0x003DA06F // Done 
+#define enable_fpkg_patch               0x003DA06F // Done - Checked
  
 // debug pkg free string
-#define fake_free_patch                 0x00FD5BD1 // Done
+#define fake_free_patch                 0x00FD5BD1 // Done - Checked
 
 // make pkgs installer working with external hdd
-#define pkg_installer_patch             0x00A13101 // Done
+#define pkg_installer_patch             0x00A13101 // Done - Checked
 
 // enable support with 6.xx external hdd
-#define ext_hdd_patch                   0x0061A66D // Done
+#define ext_hdd_patch                   0x0061A66D // Done - Checked
 
 // enable debug trophies on retail
 // #define debug_trophies_patch            0x00745809 // Done
